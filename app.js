@@ -8,3 +8,16 @@ GAME RULES:
 - The first player to reach 100 points on GLOBAL score wins the game
 
 */
+
+var dice, activePlayer;
+dice = 0;
+activePlayer = 0;
+
+  // Math.random gives you a random number in decimal numbers, but only in the
+  // rang from 0 to 1.
+  // Math.floor is the function that changes decimal numbers in whole numbers.
+
+dice = Math.floor(Math.random() *6) +1;
+console.log(dice); // for test only
+
+document.querySelector('#current-' + activePlayer).textContent = dice;
